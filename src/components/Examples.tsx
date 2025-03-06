@@ -251,10 +251,10 @@ export default function Examples() {
                 <div className="text-right">
                   <a
                     href="mailto:effitechh@gmail.com?subject=Запрос информации о проекте"
-                    className="text-black font-medium hover:text-primary-700 transition-colors inline-flex items-center"
-                    style={{color: '#000000 !important'}}
+                    className="text-primary-600 font-medium hover:text-primary-700 transition-colors inline-flex items-center"
+                    style={{color: '#0284c7 !important'}}
                   >
-                    {currentContent.learnMore} <FiArrowRight className="ml-1" style={{color: '#000000 !important'}} />
+                    {currentContent.learnMore} <FiArrowRight className="ml-1" style={{color: '#0284c7 !important'}} />
                   </a>
                 </div>
               </div>

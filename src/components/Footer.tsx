@@ -78,7 +78,7 @@ export default function Footer() {
   const currentContent = content[language as keyof typeof content];
 
   return (
-    <footer className="bg-secondary-900 text-white">
+    <footer className="bg-secondary-900 text-white" style={{backgroundColor: '#0f172a !important'}}>
       <div className="container py-12">
         <div className={`grid ${gridCols} gap-8`}>
           <div className={colSpan}>
@@ -161,7 +161,7 @@ export default function Footer() {
           </div>
         </div>
         
-        <div className={`mt-12 pt-8 border-t border-secondary-800 flex ${flexDirection} justify-between items-center`}>
+        <div className={`mt-12 pt-8 border-t border-secondary-800 flex ${flexDirection} justify-between items-center`} style={{borderColor: '#1e293b !important'}}>
           <p className={`text-secondary-400 text-sm ${marginBottom}`} style={{color: '#94a3b8 !important'}}>
             © {currentYear} EffiTech. {currentContent.rights}
           </p>

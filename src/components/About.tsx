@@ -212,7 +212,7 @@ export default function About() {
                   {advantage.icon}
                 </div>
                 <div>
-                  <h3 className={`text-xl font-semibold text-black mb-2 transition-colors duration-300 ${activeCard === index && isMobile ? 'text-primary-600' : ''}`} style={{color: '#000000 !important'}}>
+                  <h3 className={`text-xl font-semibold text-black mb-2 transition-colors duration-300 ${activeCard === index && isMobile ? 'text-primary-600' : ''}`} style={{color: activeCard === index && isMobile ? '#0284c7 !important' : '#000000 !important'}}>
                     {advantage.title}
                   </h3>
                   <p className="text-black" style={{color: '#000000 !important'}}>{advantage.description}</p>

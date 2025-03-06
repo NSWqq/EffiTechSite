@@ -174,7 +174,7 @@ export default function Services() {
   const currentContent = content[language as keyof typeof content];
 
   return (
-    <section id="services" className="py-20 bg-secondary-50">
+    <section id="services" className="py-20 bg-secondary-50" style={{backgroundColor: '#f8fafc !important'}}>
       <div className="container">
         <div className="text-center mb-16">
           <motion.h2 
@@ -209,6 +209,7 @@ export default function Services() {
               key={index} 
               variants={itemVariants}
               className="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow"
+              style={{backgroundColor: '#ffffff !important'}}
             >
               <div className={`flex ${flexDirection} ${!isMobile ? 'items-start' : ''}`}>
                 <div className={`${isMobile ? 'mb-4' : 'mr-6'}`}>{service.icon}</div>
