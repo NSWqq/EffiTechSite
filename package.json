@@ -4,10 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && cp _redirects out/ && cp _headers out/",
+    "build": "next build && cp -r public/images out/images && cp _redirects out/ && cp _headers out/",
     "start": "next start",
     "lint": "next lint",
-    "netlify-deploy": "next build && cp _redirects out/ && cp _headers out/",
+    "netlify-deploy": "next build && cp -r public/images out/images && cp _redirects out/ && cp _headers out/",
     "export": "next export"
   },
   "dependencies": {
