@@ -20,12 +20,13 @@ html {
 }
 
 body {
-  color: #000000 !important;
-  background: #ffffff !important;
+  color: #000000;
+  /* Удаляем принудительный белый фон */
+  /* background: #ffffff !important; */
 }
 
 /* Принудительно устанавливаем цвета текста для всех элементов */
-h1, h2, h3, h4, h5, h6, p, span, li, a, div {
+h1, h2, h3, h4, h5, h6, p, span, li, a {
   color: #000000 !important;
 }
 
@@ -40,7 +41,6 @@ h1, h2, h3, h4, h5, h6, p, span, li, a, div {
 .bg-primary-600 span, 
 .bg-primary-600 li, 
 .bg-primary-600 a,
-.bg-primary-600 div,
 .bg-secondary-900 h1, 
 .bg-secondary-900 h2, 
 .bg-secondary-900 h3, 
@@ -52,23 +52,34 @@ h1, h2, h3, h4, h5, h6, p, span, li, a, div {
 .bg-secondary-900 li, 
 .bg-secondary-900 a,
 .bg-secondary-900 div,
-.bg-secondary-50 h1, 
-.bg-secondary-50 h2, 
-.bg-secondary-50 h3, 
-.bg-secondary-50 h4, 
-.bg-secondary-50 h5, 
-.bg-secondary-50 h6, 
-.bg-secondary-50 p, 
-.bg-secondary-50 span, 
-.bg-secondary-50 li, 
-.bg-secondary-50 a,
-.bg-secondary-50 div {
+footer h1,
+footer h2,
+footer h3,
+footer h4,
+footer h5,
+footer h6,
+footer p,
+footer span,
+footer li,
+footer a {
   color: #ffffff !important;
 }
 
 /* Специальные стили для кнопок */
 .bg-primary-600 {
-  color: #ffffff !important;
+  background-color: #0284c7 !important;
+}
+
+.bg-secondary-900 {
+  background-color: #0f172a !important;
+}
+
+.bg-secondary-50 {
+  background-color: #f8fafc !important;
+}
+
+.bg-gradient-to-br {
+  background: linear-gradient(to bottom right, #f0f9ff, #f8fafc) !important;
 }
 
 .text-white {
@@ -77,6 +88,10 @@ h1, h2, h3, h4, h5, h6, p, span, li, a, div {
 
 .text-black {
   color: #000000 !important;
+}
+
+.text-primary-600 {
+  color: #0284c7 !important;
 }
 
 @layer utilities {

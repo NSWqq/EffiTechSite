@@ -218,7 +218,7 @@ export default function Services() {
                   <ul className="space-y-2">
                     {service.features.map((feature, idx) => (
                       <li key={idx} className="flex items-start">
-                        <span className="text-primary-600 mr-2">•</span>
+                        <span className="text-primary-600 mr-2" style={{color: '#0284c7 !important'}}>•</span>
                         <span className="text-black" style={{color: '#000000 !important'}}>{feature}</span>
                       </li>
                     ))}
@@ -233,7 +233,7 @@ export default function Services() {
           <a
             href="mailto:effitechh@gmail.com"
             className="inline-flex items-center bg-primary-600 text-white px-6 py-3 rounded-md hover:bg-primary-700 transition-colors"
-            style={{color: '#ffffff !important'}}
+            style={{color: '#ffffff !important', backgroundColor: '#0284c7 !important'}}
           >
             {currentContent.contactUs} <FiArrowRight className="ml-2" />
           </a>

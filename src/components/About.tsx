@@ -162,7 +162,7 @@ export default function About() {
   const advantages = advantagesData[language as keyof typeof advantagesData];
 
   return (
-    <section id="about" className="py-20 bg-white">
+    <section id="about" className="py-20 bg-white" style={{backgroundColor: '#ffffff !important'}}>
       <div className="container">
         <div className="text-center mb-16">
           <motion.h2 
@@ -203,6 +203,7 @@ export default function About() {
                     : 'shadow-sm active:shadow-md' 
                   : 'hover:shadow-md'
               }`}
+              style={{backgroundColor: '#f8fafc !important'}}
               onClick={() => handleCardTap(index)}
               whileTap={isMobile ? { scale: 1.03 } : {}}
             >

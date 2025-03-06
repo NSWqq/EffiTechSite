@@ -109,11 +109,12 @@ export default function FAQ() {
   const currentContent = content[language as keyof typeof content];
 
   return (
-    <section id="faq" className="py-20 bg-white">
+    <section id="faq" className="py-20 bg-white" style={{backgroundColor: '#ffffff !important'}}>
       <div className="container">
         <div className="text-center mb-16">
           <motion.h2 
             className={`${titleSize} font-bold text-black mb-4`}
+            style={{color: '#000000 !important'}}
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
@@ -122,6 +123,7 @@ export default function FAQ() {
           </motion.h2>
           <motion.p 
             className="text-lg text-black max-w-2xl mx-auto"
+            style={{color: '#000000 !important'}}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.2 }}
@@ -139,18 +141,22 @@ export default function FAQ() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="border border-secondary-200 rounded-lg overflow-hidden"
+                style={{borderColor: '#e2e8f0 !important'}}
               >
                 <button
                   className={`w-full flex justify-between items-center p-5 text-left focus:outline-none ${
                     activeIndex === index ? 'bg-primary-50' : 'bg-white'
                   }`}
+                  style={activeIndex === index 
+                    ? {backgroundColor: '#f0f9ff !important'} 
+                    : {backgroundColor: '#ffffff !important'}}
                   onClick={() => toggleFAQ(index)}
                 >
-                  <span className="text-lg font-medium text-black">{faq.question}</span>
+                  <span className="text-lg font-medium text-black" style={{color: '#000000 !important'}}>{faq.question}</span>
                   {activeIndex === index ? (
-                    <FiChevronUp className="text-black flex-shrink-0" />
+                    <FiChevronUp className="text-black flex-shrink-0" style={{color: '#000000 !important'}} />
                   ) : (
-                    <FiChevronDown className="text-black flex-shrink-0" />
+                    <FiChevronDown className="text-black flex-shrink-0" style={{color: '#000000 !important'}} />
                   )}
                 </button>
                 <AnimatePresence>
@@ -162,8 +168,8 @@ export default function FAQ() {
                       transition={{ duration: 0.3 }}
                       className="overflow-hidden"
                     >
-                      <div className="p-5 pt-0 border-t border-secondary-200">
-                        <p className="text-black">{faq.answer}</p>
+                      <div className="p-5 pt-0 border-t border-secondary-200" style={{borderColor: '#e2e8f0 !important'}}>
+                        <p className="text-black" style={{color: '#000000 !important'}}>{faq.answer}</p>
                       </div>
                     </motion.div>
                   )}
@@ -179,7 +185,7 @@ export default function FAQ() {
               href="mailto:effitechh@gmail.com?subject=Вопрос о услугах"
               style={{color: '#000000 !important'}}
             >
-              {currentContent.writeToUs} <FiArrowRight className="ml-2" />
+              {currentContent.writeToUs} <FiArrowRight className="ml-2" style={{color: '#000000 !important'}} />
             </a>
           </div>
         </div>
