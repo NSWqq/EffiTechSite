@@ -46,11 +46,12 @@ export default function CTA() {
   const currentContent = content[language as keyof typeof content];
 
   return (
-    <section className="py-20 bg-primary-600">
+    <section className="py-20 bg-primary-600" style={{backgroundColor: '#0284c7 !important'}}>
       <div className="container">
         <div className="max-w-4xl mx-auto text-center">
           <motion.h2 
             className={`${titleSize} font-bold text-white mb-6`}
+            style={{color: '#ffffff !important'}}
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
@@ -59,6 +60,7 @@ export default function CTA() {
           </motion.h2>
           <motion.p 
             className="text-xl text-white/90 mb-10 max-w-2xl mx-auto"
+            style={{color: '#ffffff !important'}}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.2 }}
@@ -74,6 +76,7 @@ export default function CTA() {
               <a
                 href="mailto:effitechh@gmail.com?subject=Запрос консультации"
                 className="bg-white text-black px-8 py-3 rounded-md hover:bg-gray-100 transition-colors inline-flex items-center justify-center"
+                style={{color: '#000000 !important', backgroundColor: '#ffffff !important'}}
               >
                 {currentContent.button}
               </a>

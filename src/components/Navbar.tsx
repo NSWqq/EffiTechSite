@@ -103,7 +103,8 @@ export default function Navbar() {
               </button>
               <a
                 href="mailto:effitechh@gmail.com"
-                className={`hidden md:inline-flex items-center ${scrolled ? 'text-black' : 'text-white'} hover:text-primary-600 transition-colors`}
+                className={`hidden md:inline-flex items-center text-black hover:text-primary-600 transition-colors`}
+                style={{color: '#000000 !important'}}
               >
                 <FiMail className="mr-2" />
                 {language === 'ru' ? 'Связаться' : 'Contact us'}
@@ -155,7 +156,8 @@ export default function Navbar() {
               ))}
               <a
                 href="mailto:effitechh@gmail.com"
-                className="flex items-center text-black hover:text-primary-600 transition-colors py-2"
+                className={`flex items-center text-black hover:text-primary-600 transition-colors py-2`}
+                style={{color: '#000000 !important'}}
                 onClick={() => setIsOpen(false)}
               >
                 <FiMail className="mr-2" />

@@ -118,11 +118,12 @@ export default function Contacts() {
   const currentContent = content[language as keyof typeof content];
 
   return (
-    <section id="contacts" className="py-20 bg-secondary-50">
+    <section id="contacts" className="py-20 bg-secondary-50" style={{backgroundColor: '#f8fafc !important'}}>
       <div className="container">
         <div className="text-center mb-16">
           <motion.h2 
-            className={`${titleSize} font-bold text-white mb-4`}
+            className={`${titleSize} font-bold text-black mb-4`}
+            style={{color: '#000000 !important'}}
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
@@ -130,7 +131,8 @@ export default function Contacts() {
             {currentContent.title}
           </motion.h2>
           <motion.p 
-            className="text-lg text-white max-w-2xl mx-auto"
+            className="text-lg text-black max-w-2xl mx-auto"
+            style={{color: '#000000 !important'}}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.2 }}
@@ -140,46 +142,49 @@ export default function Contacts() {
         </div>
 
         <div className="max-w-4xl mx-auto">
-          <div className="bg-white rounded-xl shadow-md overflow-hidden">
+          <div className="bg-white rounded-xl shadow-lg overflow-hidden" style={{backgroundColor: '#ffffff !important'}}>
             <div className={`grid ${gridCols}`}>
-              <div className={`${colSpan} bg-white p-8`}>
-                <h3 className="text-2xl font-bold mb-6 text-black">{currentContent.contactInfo}</h3>
+              <div className={`${colSpan} bg-white p-8`} style={{
+                backgroundImage: 'linear-gradient(to bottom right, rgba(240, 249, 255, 0.7), rgba(248, 250, 252, 0.7))',
+                backgroundColor: '#ffffff !important'
+              }}>
+                <h3 className="text-2xl font-bold mb-6 text-black" style={{color: '#000000 !important'}}>{currentContent.contactInfo}</h3>
                 <div className="space-y-4 mb-8">
                   <div className="flex items-center mb-4">
-                    <FiMail className="text-black mr-2 text-xl" />
+                    <FiMail className="text-primary-600 mr-2 text-xl" style={{color: '#0284c7 !important'}} />
                     <div>
-                      <h3 className="font-medium text-black">Email:</h3>
-                      <a href="mailto:effitechh@gmail.com" className="hover:underline text-black">
+                      <h3 className="font-medium text-black" style={{color: '#000000 !important'}}>Email:</h3>
+                      <a href="mailto:effitechh@gmail.com" className="hover:underline text-black hover:text-primary-600 transition-colors" style={{color: '#000000 !important'}}>
                         effitechh@gmail.com
                       </a>
                     </div>
                   </div>
                   <div className="flex items-start">
-                    <FiPhone className="w-5 h-5 mr-3 mt-1 text-black" />
+                    <FiPhone className="w-5 h-5 mr-3 mt-1 text-primary-600" style={{color: '#0284c7 !important'}} />
                     <div>
-                      <p className="font-medium text-black">{currentContent.phone}</p>
-                      <p className="text-black">{currentContent.phoneValue}</p>
+                      <p className="font-medium text-black" style={{color: '#000000 !important'}}>{currentContent.phone}</p>
+                      <p className="text-black" style={{color: '#000000 !important'}}>{currentContent.phoneValue}</p>
                     </div>
                   </div>
                 </div>
                 <div className="mt-12">
-                  <p className="text-sm text-black">
+                  <p className="text-sm text-black" style={{color: '#000000 !important'}}>
                     {currentContent.promoText}
                   </p>
                 </div>
               </div>
-              <div className={`${colSpanForm} p-8`}>
+              <div className={`${colSpanForm} p-8`} style={{backgroundColor: '#ffffff !important'}}>
                 {isSubmitted ? (
                   <motion.div 
                     initial={{ opacity: 0, scale: 0.9 }}
                     animate={{ opacity: 1, scale: 1 }}
                     className="text-center py-12"
                   >
-                    <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-primary-100 text-primary-600 mb-4">
+                    <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-primary-100 text-primary-600 mb-4" style={{backgroundColor: '#e0f2fe !important', color: '#0284c7 !important'}}>
                       <FiSend className="w-8 h-8" />
                     </div>
-                    <h3 className="text-2xl font-bold text-black mb-2">{currentContent.thankYou}</h3>
-                    <p className="text-black">
+                    <h3 className="text-2xl font-bold text-black mb-2" style={{color: '#000000 !important'}}>{currentContent.thankYou}</h3>
+                    <p className="text-black" style={{color: '#000000 !important'}}>
                       {currentContent.thankYouMessage}
                     </p>
                   </motion.div>
@@ -187,7 +192,7 @@ export default function Contacts() {
                   <form onSubmit={handleSubmit}>
                     <div className="grid grid-cols-1 gap-6">
                       <div>
-                        <label htmlFor="name" className="block text-sm font-medium text-black mb-1">
+                        <label htmlFor="name" className="block text-sm font-medium text-black mb-1" style={{color: '#000000 !important'}}>
                           {currentContent.yourName}
                         </label>
                         <input
@@ -198,10 +203,11 @@ export default function Contacts() {
                           onChange={handleChange}
                           required
                           className="w-full px-4 py-2 border border-secondary-300 rounded-md focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition-colors text-black"
+                          style={{borderColor: '#cbd5e1 !important', color: '#000000 !important'}}
                         />
                       </div>
                       <div>
-                        <label htmlFor="email" className="block text-sm font-medium text-black mb-1">
+                        <label htmlFor="email" className="block text-sm font-medium text-black mb-1" style={{color: '#000000 !important'}}>
                           Email
                         </label>
                         <input
@@ -212,10 +218,11 @@ export default function Contacts() {
                           onChange={handleChange}
                           required
                           className="w-full px-4 py-2 border border-secondary-300 rounded-md focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition-colors text-black"
+                          style={{borderColor: '#cbd5e1 !important', color: '#000000 !important'}}
                         />
                       </div>
                       <div>
-                        <label htmlFor="phone" className="block text-sm font-medium text-black mb-1">
+                        <label htmlFor="phone" className="block text-sm font-medium text-black mb-1" style={{color: '#000000 !important'}}>
                           {currentContent.phone}
                         </label>
                         <input
@@ -225,10 +232,11 @@ export default function Contacts() {
                           value={formData.phone}
                           onChange={handleChange}
                           className="w-full px-4 py-2 border border-secondary-300 rounded-md focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition-colors text-black"
+                          style={{borderColor: '#cbd5e1 !important', color: '#000000 !important'}}
                         />
                       </div>
                       <div>
-                        <label htmlFor="message" className="block text-sm font-medium text-black mb-1">
+                        <label htmlFor="message" className="block text-sm font-medium text-black mb-1" style={{color: '#000000 !important'}}>
                           {currentContent.message}
                         </label>
                         <textarea
@@ -239,26 +247,31 @@ export default function Contacts() {
                           required
                           rows={4}
                           className="w-full px-4 py-2 border border-secondary-300 rounded-md focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition-colors text-black"
+                          style={{borderColor: '#cbd5e1 !important', color: '#000000 !important'}}
                         ></textarea>
                       </div>
                       <div>
                         <button
                           type="submit"
                           disabled={isSubmitting}
-                          className="w-full bg-primary-600 text-black py-3 px-6 rounded-md hover:bg-primary-700 transition-colors disabled:opacity-70 disabled:cursor-not-allowed flex items-center justify-center border-2 border-black"
+                          className="w-full bg-primary-600 text-white py-3 px-6 rounded-md hover:bg-primary-700 transition-all disabled:opacity-70 disabled:cursor-not-allowed flex items-center justify-center shadow-md hover:shadow-lg transform hover:scale-[1.02]"
+                          style={{
+                            background: 'linear-gradient(to right, #0284c7, #0369a1)',
+                            color: '#ffffff !important',
+                            border: 'none',
+                            transition: 'all 0.3s ease'
+                          }}
                         >
                           {isSubmitting ? (
-                            <span className="inline-flex items-center">
-                              <svg className="animate-spin -ml-1 mr-2 h-4 w-4 text-black" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                            <>
+                              <svg className="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
                                 <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
                                 <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
                               </svg>
-                              {currentContent.sending}
-                            </span>
+                              <span style={{color: '#ffffff !important'}}>{currentContent.sending}</span>
+                            </>
                           ) : (
-                            <span className="inline-flex items-center">
-                              {currentContent.submit} <FiSend className="ml-2" />
-                            </span>
+                            <span style={{color: '#ffffff !important'}}>{currentContent.submit}</span>
                           )}
                         </button>
                       </div>
