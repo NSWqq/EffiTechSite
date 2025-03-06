@@ -9,10 +9,14 @@ const nextConfig = {
   images: {
     unoptimized: true, // Отключаем оптимизацию изображений для статического экспорта
   },
+  // Настройка базового пути для корректной загрузки ресурсов
+  assetPrefix: './',
   // Отключаем использование серверных компонентов для статического экспорта
   experimental: {
     appDir: true,
   },
+  // Настройка для корректной обработки CSS
+  trailingSlash: true,
 };
 
 export default nextConfig; 

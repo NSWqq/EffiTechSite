@@ -4,10 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && cp _redirects out/ && cp _headers out/",
     "start": "next start",
     "lint": "next lint",
-    "netlify-deploy": "next build && node netlify.js",
+    "netlify-deploy": "next build && cp _redirects out/ && cp _headers out/",
     "export": "next export"
   },
   "dependencies": {
