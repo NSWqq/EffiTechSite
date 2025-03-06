@@ -247,6 +247,7 @@ export default function Examples() {
                   <a
                     href="mailto:effitechh@gmail.com?subject=Запрос информации о проекте"
                     className="text-black font-medium hover:text-primary-700 transition-colors inline-flex items-center"
+                    style={{color: '#000000 !important'}}
                   >
                     {currentContent.learnMore} <FiArrowRight className="ml-1" />
                   </a>

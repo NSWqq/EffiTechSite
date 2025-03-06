@@ -167,6 +167,7 @@ export default function About() {
         <div className="text-center mb-16">
           <motion.h2 
             className={`${titleSize} font-bold text-black mb-4`}
+            style={{color: '#000000 !important'}}
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
@@ -175,6 +176,7 @@ export default function About() {
           </motion.h2>
           <motion.p 
             className="text-lg text-black max-w-2xl mx-auto"
+            style={{color: '#000000 !important'}}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.2 }}
@@ -209,10 +211,10 @@ export default function About() {
                   {advantage.icon}
                 </div>
                 <div>
-                  <h3 className={`text-xl font-semibold text-black mb-2 transition-colors duration-300 ${activeCard === index && isMobile ? 'text-primary-600' : ''}`}>
+                  <h3 className={`text-xl font-semibold text-black mb-2 transition-colors duration-300 ${activeCard === index && isMobile ? 'text-primary-600' : ''}`} style={{color: '#000000 !important'}}>
                     {advantage.title}
                   </h3>
-                  <p className="text-black">{advantage.description}</p>
+                  <p className="text-black" style={{color: '#000000 !important'}}>{advantage.description}</p>
                 </div>
               </div>
             </motion.div>

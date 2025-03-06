@@ -179,6 +179,7 @@ export default function Services() {
         <div className="text-center mb-16">
           <motion.h2 
             className={`${titleSize} font-bold text-black mb-4`}
+            style={{color: '#000000 !important'}}
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
@@ -187,6 +188,7 @@ export default function Services() {
           </motion.h2>
           <motion.p 
             className={`${textSize} text-black max-w-2xl mx-auto`}
+            style={{color: '#000000 !important'}}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.2 }}
@@ -211,13 +213,13 @@ export default function Services() {
               <div className={`flex ${flexDirection} ${!isMobile ? 'items-start' : ''}`}>
                 <div className={`${isMobile ? 'mb-4' : 'mr-6'}`}>{service.icon}</div>
                 <div>
-                  <h3 className="text-2xl font-semibold text-black mb-3">{service.title}</h3>
-                  <p className="text-black mb-4">{service.description}</p>
+                  <h3 className="text-2xl font-semibold text-black mb-3" style={{color: '#000000 !important'}}>{service.title}</h3>
+                  <p className="text-black mb-4" style={{color: '#000000 !important'}}>{service.description}</p>
                   <ul className="space-y-2">
                     {service.features.map((feature, idx) => (
                       <li key={idx} className="flex items-start">
                         <span className="text-primary-600 mr-2">•</span>
-                        <span className="text-black">{feature}</span>
+                        <span className="text-black" style={{color: '#000000 !important'}}>{feature}</span>
                       </li>
                     ))}
                   </ul>
@@ -231,6 +233,7 @@ export default function Services() {
           <a
             href="mailto:effitechh@gmail.com"
             className="inline-flex items-center bg-primary-600 text-white px-6 py-3 rounded-md hover:bg-primary-700 transition-colors"
+            style={{color: '#ffffff !important'}}
           >
             {currentContent.contactUs} <FiArrowRight className="ml-2" />
           </a>

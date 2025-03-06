@@ -56,7 +56,7 @@ export default function Hero() {
 
   const content = {
     ru: {
-      title: <><span className="text-primary-600">EffiTech</span> - автоматизация, умножающая эффективность</>,
+      title: <><span className="text-primary-600" style={{color: '#0284c7 !important'}}>EffiTech</span> - автоматизация, умножающая эффективность</>,
       description: 'Мы создаем индивидуальные системы автоматизации, которые экономят ваше время и увеличивают прибыль',
       learnMore: 'Узнать больше',
       contactUs: 'Связаться с нами',
@@ -64,7 +64,7 @@ export default function Hero() {
       placeholderText: 'Автоматизация+бизнес-процессов'
     },
     en: {
-      title: <><span className="text-primary-600">EffiTech</span> - automation that multiplies efficiency</>,
+      title: <><span className="text-primary-600" style={{color: '#0284c7 !important'}}>EffiTech</span> - automation that multiplies efficiency</>,
       description: 'We create custom automation systems that save your time and increase profits',
       learnMore: 'Learn more',
       contactUs: 'Contact us',
@@ -83,10 +83,10 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <h1 className={`${textClasses} font-bold text-secondary-900 leading-tight mb-4 text-black`}>
+            <h1 className={`${textClasses} font-bold text-secondary-900 leading-tight mb-4 text-black`} style={{color: '#000000 !important'}}>
               {content[language as keyof typeof content].title}
             </h1>
-            <p className={`${isMobile ? 'text-lg' : 'text-xl'} text-secondary-700 mb-8 max-w-xl text-black`}>
+            <p className={`${isMobile ? 'text-lg' : 'text-xl'} text-secondary-700 mb-8 max-w-xl text-black`} style={{color: '#000000 !important'}}>
               {content[language as keyof typeof content].description}
             </p>
             <div className={`flex ${buttonLayout} gap-4`}>
@@ -96,12 +96,14 @@ export default function Hero() {
                 duration={500}
                 offset={-70}
                 className="bg-primary-600 text-white px-6 py-3 rounded-md hover:bg-primary-700 transition-colors inline-flex items-center justify-center cursor-pointer"
+                style={{color: '#ffffff !important'}}
               >
                 {content[language as keyof typeof content].learnMore} <FiArrowRight className="ml-2" />
               </ScrollLink>
               <a
                 href="mailto:effitechh@gmail.com"
                 className="border-2 border-primary-600 text-primary-600 px-6 py-3 rounded-md hover:bg-primary-50 transition-colors inline-flex items-center justify-center"
+                style={{color: '#0284c7 !important'}}
               >
                 {content[language as keyof typeof content].contactUs}
               </a>
@@ -120,7 +122,8 @@ export default function Hero() {
                 <img 
                   src={illustrationSrc} 
                   alt={content[language as keyof typeof content].altText} 
-                  className="w-full h-auto text-black"
+                  className="w-full h-auto"
+                  style={{color: '#000000'}}
                   onError={(e) => {
                     const target = e.target as HTMLImageElement;
                     target.src = `https://via.placeholder.com/600x400?text=${content[language as keyof typeof content].placeholderText}`;

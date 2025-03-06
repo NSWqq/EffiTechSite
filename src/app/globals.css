@@ -1,31 +1,35 @@
 @import "tailwindcss";
 
 :root {
-  --foreground-rgb: 15, 23, 42;
+  --foreground-rgb: 0, 0, 0;
   --background-rgb: 255, 255, 255;
 }
 
+/* Отключаем темную тему полностью */
+/*
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 241, 245, 249;
     --background-rgb: 15, 23, 42;
   }
 }
+*/
 
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: rgb(var(--background-rgb));
+  color: #000000 !important;
+  background: #ffffff !important;
 }
 
-/* Принудительно устанавливаем цвета текста */
-h1, h2, h3, h4, h5, h6, p, span, li, a {
+/* Принудительно устанавливаем цвета текста для всех элементов */
+h1, h2, h3, h4, h5, h6, p, span, li, a, div {
   color: #000000 !important;
 }
 
+/* Исключения для элементов на темном фоне */
 .bg-primary-600 h1, 
 .bg-primary-600 h2, 
 .bg-primary-600 h3, 
@@ -36,6 +40,7 @@ h1, h2, h3, h4, h5, h6, p, span, li, a {
 .bg-primary-600 span, 
 .bg-primary-600 li, 
 .bg-primary-600 a,
+.bg-primary-600 div,
 .bg-secondary-900 h1, 
 .bg-secondary-900 h2, 
 .bg-secondary-900 h3, 
@@ -45,8 +50,33 @@ h1, h2, h3, h4, h5, h6, p, span, li, a {
 .bg-secondary-900 p, 
 .bg-secondary-900 span, 
 .bg-secondary-900 li, 
-.bg-secondary-900 a {
+.bg-secondary-900 a,
+.bg-secondary-900 div,
+.bg-secondary-50 h1, 
+.bg-secondary-50 h2, 
+.bg-secondary-50 h3, 
+.bg-secondary-50 h4, 
+.bg-secondary-50 h5, 
+.bg-secondary-50 h6, 
+.bg-secondary-50 p, 
+.bg-secondary-50 span, 
+.bg-secondary-50 li, 
+.bg-secondary-50 a,
+.bg-secondary-50 div {
   color: #ffffff !important;
+}
+
+/* Специальные стили для кнопок */
+.bg-primary-600 {
+  color: #ffffff !important;
+}
+
+.text-white {
+  color: #ffffff !important;
+}
+
+.text-black {
+  color: #000000 !important;
 }
 
 @layer utilities {

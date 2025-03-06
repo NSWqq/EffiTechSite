@@ -173,10 +173,11 @@ export default function FAQ() {
           </div>
           
           <div className="mt-12 text-center">
-            <p className="text-black mb-4">{currentContent.notFoundQuestion}</p>
+            <p className="text-black mb-4" style={{color: '#000000 !important'}}>{currentContent.notFoundQuestion}</p>
             <a 
               className="text-black font-medium hover:text-primary-700 transition-colors inline-flex items-center"
               href="mailto:effitechh@gmail.com?subject=Вопрос о услугах"
+              style={{color: '#000000 !important'}}
             >
               {currentContent.writeToUs} <FiArrowRight className="ml-2" />
             </a>
