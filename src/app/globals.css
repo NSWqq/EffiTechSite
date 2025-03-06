@@ -65,17 +65,9 @@ footer a {
   color: #ffffff !important;
 }
 
-/* Специальные стили для фонов и цветов */
+/* Специальные стили для кнопок */
 .bg-primary-600 {
   background-color: #0284c7 !important;
-}
-
-.bg-primary-700 {
-  background-color: #0369a1 !important;
-}
-
-.bg-primary-50 {
-  background-color: #f0f9ff !important;
 }
 
 .bg-secondary-900 {
@@ -84,10 +76,6 @@ footer a {
 
 .bg-secondary-50 {
   background-color: #f8fafc !important;
-}
-
-.bg-white {
-  background-color: #ffffff !important;
 }
 
 .bg-gradient-to-br {
@@ -104,10 +92,6 @@ footer a {
 
 .text-primary-600 {
   color: #0284c7 !important;
-}
-
-.border-primary-600 {
-  border-color: #0284c7 !important;
 }
 
 @layer utilities {
