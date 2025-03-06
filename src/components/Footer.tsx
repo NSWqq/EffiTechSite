@@ -82,15 +82,14 @@ export default function Footer() {
       <div className="container py-12">
         <div className={`grid ${gridCols} gap-8`}>
           <div className={colSpan}>
-            <h3 className="text-2xl font-bold mb-4" style={{color: '#ffffff !important'}}>EffiTech</h3>
-            <p className="text-secondary-300 mb-6 max-w-md" style={{color: '#cbd5e1 !important'}}>
+            <h3 className="text-2xl font-bold mb-4">EffiTech</h3>
+            <p className="text-secondary-300 mb-6 max-w-md">
               {currentContent.companyDescription}
             </p>
             <div className="flex items-center">
               <a 
                 href="mailto:effitechh@gmail.com" 
                 className="flex items-center text-secondary-300 hover:text-white transition-colors"
-                style={{color: '#cbd5e1 !important'}}
               >
                 <FiMail className="mr-2" /> effitechh@gmail.com
               </a>
@@ -98,7 +97,7 @@ export default function Footer() {
           </div>
           
           <div>
-            <h4 className="text-lg font-semibold mb-4" style={{color: '#ffffff !important'}}>{currentContent.navigation}</h4>
+            <h4 className="text-lg font-semibold mb-4">{currentContent.navigation}</h4>
             <ul className="space-y-2">
               <li>
                 <ScrollLink
@@ -107,7 +106,6 @@ export default function Footer() {
                   duration={500}
                   offset={-70}
                   className="text-secondary-300 hover:text-white transition-colors cursor-pointer"
-                  style={{color: '#cbd5e1 !important'}}
                 >
                   {currentContent.about}
                 </ScrollLink>
@@ -119,7 +117,6 @@ export default function Footer() {
                   duration={500}
                   offset={-70}
                   className="text-secondary-300 hover:text-white transition-colors cursor-pointer"
-                  style={{color: '#cbd5e1 !important'}}
                 >
                   {currentContent.services}
                 </ScrollLink>
@@ -131,7 +128,6 @@ export default function Footer() {
                   duration={500}
                   offset={-70}
                   className="text-secondary-300 hover:text-white transition-colors cursor-pointer"
-                  style={{color: '#cbd5e1 !important'}}
                 >
                   {currentContent.examples}
                 </ScrollLink>
@@ -143,7 +139,6 @@ export default function Footer() {
                   duration={500}
                   offset={-70}
                   className="text-secondary-300 hover:text-white transition-colors cursor-pointer"
-                  style={{color: '#cbd5e1 !important'}}
                 >
                   {currentContent.contacts}
                 </ScrollLink>
@@ -152,17 +147,17 @@ export default function Footer() {
           </div>
           
           <div>
-            <h4 className="text-lg font-semibold mb-4" style={{color: '#ffffff !important'}}>{currentContent.servicesList.title}</h4>
+            <h4 className="text-lg font-semibold mb-4">{currentContent.servicesList.title}</h4>
             <ul className="space-y-2">
               {currentContent.servicesList.items.map((service, index) => (
-                <li key={index} className="text-secondary-300" style={{color: '#cbd5e1 !important'}}>{service}</li>
+                <li key={index} className="text-secondary-300">{service}</li>
               ))}
             </ul>
           </div>
         </div>
         
         <div className={`mt-12 pt-8 border-t border-secondary-800 flex ${flexDirection} justify-between items-center`}>
-          <p className={`text-secondary-400 text-sm ${marginBottom}`} style={{color: '#94a3b8 !important'}}>
+          <p className={`text-secondary-400 text-sm ${marginBottom}`}>
             © {currentYear} EffiTech. {currentContent.rights}
           </p>
         </div>

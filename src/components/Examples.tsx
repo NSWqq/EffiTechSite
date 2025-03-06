@@ -157,12 +157,11 @@ export default function Examples() {
   const currentContent = content[language as keyof typeof content];
 
   return (
-    <section id="examples" className="py-20 bg-white" style={{backgroundColor: '#ffffff !important'}}>
+    <section id="examples" className="py-20 bg-white">
       <div className="container">
         <div className="text-center mb-16">
           <motion.h2 
             className={`${titleSize} font-bold text-black mb-4`}
-            style={{color: '#000000 !important'}}
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
@@ -171,7 +170,6 @@ export default function Examples() {
           </motion.h2>
           <motion.p 
             className="text-lg text-black max-w-2xl mx-auto"
-            style={{color: '#000000 !important'}}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.2 }}
@@ -182,8 +180,8 @@ export default function Examples() {
 
         <div className={`grid ${gridCols} gap-8`}>
           <div className={isLargeScreen ? 'col-span-1' : ''}>
-            <div className="bg-secondary-50 rounded-xl p-6" style={{backgroundColor: '#f8fafc !important'}}>
-              <h3 className="text-xl font-semibold text-black mb-4" style={{color: '#000000 !important'}}>{currentContent.ourProjects}</h3>
+            <div className="bg-secondary-50 rounded-xl p-6">
+              <h3 className="text-xl font-semibold text-black mb-4">{currentContent.ourProjects}</h3>
               <div className="space-y-4">
                 {examples.map((example, index) => (
                   <motion.div 
@@ -196,14 +194,11 @@ export default function Examples() {
                         ? 'bg-primary-50 border-l-4 border-primary-600' 
                         : 'hover:bg-secondary-100'
                     }`}
-                    style={activeExample === index 
-                      ? {backgroundColor: '#f0f9ff !important', borderLeftColor: '#0284c7 !important'} 
-                      : {}}
                     onClick={() => setActiveExample(index)}
                   >
                     <div className="flex items-center">
                       <div className="mr-3">{example.icon}</div>
-                      <h4 className="font-medium text-black" style={{color: '#000000 !important'}}>{example.title}</h4>
+                      <h4 className="font-medium text-black">{example.title}</h4>
                     </div>
                   </motion.div>
                 ))}
@@ -218,8 +213,8 @@ export default function Examples() {
             animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
             transition={{ duration: 0.6 }}
           >
-            <div className="bg-white rounded-xl shadow-lg overflow-hidden" style={{backgroundColor: '#ffffff !important'}}>
-              <div className="h-64 bg-secondary-50 relative" style={{backgroundColor: '#f8fafc !important'}}>
+            <div className="bg-white rounded-xl shadow-lg overflow-hidden">
+              <div className="h-64 bg-secondary-50 relative">
                 <motion.img 
                   src={examples[activeExample].image} 
                   alt={examples[activeExample].title}
@@ -235,15 +230,15 @@ export default function Examples() {
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-2xl font-bold text-black mb-4" style={{color: '#000000 !important'}}>{examples[activeExample].title}</h3>
-                <p className="text-black mb-6" style={{color: '#000000 !important'}}>{examples[activeExample].description}</p>
+                <h3 className="text-2xl font-bold text-black mb-4">{examples[activeExample].title}</h3>
+                <p className="text-black mb-6">{examples[activeExample].description}</p>
                 <div className="mb-6">
-                  <h4 className="text-lg font-semibold text-black mb-3" style={{color: '#000000 !important'}}>{currentContent.results}</h4>
+                  <h4 className="text-lg font-semibold text-black mb-3">{currentContent.results}</h4>
                   <ul className="space-y-2">
                     {examples[activeExample].results.map((result, idx) => (
                       <li key={idx} className="flex items-start">
-                        <FiArrowRight className="text-primary-600 mr-2 mt-1 flex-shrink-0" style={{color: '#0284c7 !important'}} />
-                        <span className="text-black" style={{color: '#000000 !important'}}>{result}</span>
+                        <FiArrowRight className="text-primary-600 mr-2 mt-1 flex-shrink-0" />
+                        <span className="text-black">{result}</span>
                       </li>
                     ))}
                   </ul>
@@ -252,9 +247,8 @@ export default function Examples() {
                   <a
                     href="mailto:effitechh@gmail.com?subject=Запрос информации о проекте"
                     className="text-black font-medium hover:text-primary-700 transition-colors inline-flex items-center"
-                    style={{color: '#000000 !important'}}
                   >
-                    {currentContent.learnMore} <FiArrowRight className="ml-1" style={{color: '#000000 !important'}} />
+                    {currentContent.learnMore} <FiArrowRight className="ml-1" />
                   </a>
                 </div>
               </div>

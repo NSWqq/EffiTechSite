@@ -1,0 +1,58 @@
+<svg width="800" height="400" viewBox="0 0 800 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="400" fill="#F0F9FF"/>
+  
+  <!-- Background Elements -->
+  <circle cx="400" cy="200" r="180" fill="#E0F2FE" opacity="0.7"/>
+  <circle cx="150" cy="100" r="50" fill="#BAE6FD" opacity="0.5"/>
+  <circle cx="650" cy="300" r="70" fill="#7DD3FC" opacity="0.4"/>
+  
+  <!-- AI Processing Center (replacing Telegram Logo) -->
+  <circle cx="400" cy="200" r="120" fill="#0EA5E9"/>
+  <path d="M340 170L460 170" stroke="white" stroke-width="6" stroke-linecap="round"/>
+  <path d="M340 200L460 200" stroke="white" stroke-width="6" stroke-linecap="round"/>
+  <path d="M340 230L460 230" stroke="white" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="320" cy="170" r="7" fill="white">
+    <animate attributeName="r" values="7;10;7" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="320" cy="200" r="7" fill="white">
+    <animate attributeName="r" values="7;10;7" dur="2s" repeatCount="indefinite" begin="0.5s"/>
+  </circle>
+  <circle cx="320" cy="230" r="7" fill="white">
+    <animate attributeName="r" values="7;10;7" dur="2s" repeatCount="indefinite" begin="1s"/>
+  </circle>
+  <circle cx="480" cy="170" r="7" fill="white">
+    <animate attributeName="r" values="7;10;7" dur="2s" repeatCount="indefinite" begin="0.3s"/>
+  </circle>
+  <circle cx="480" cy="200" r="7" fill="white">
+    <animate attributeName="r" values="7;10;7" dur="2s" repeatCount="indefinite" begin="0.8s"/>
+  </circle>
+  <circle cx="480" cy="230" r="7" fill="white">
+    <animate attributeName="r" values="7;10;7" dur="2s" repeatCount="indefinite" begin="1.3s"/>
+  </circle>
+  
+  <!-- Automation Elements -->
+  <circle cx="200" cy="200" r="60" fill="#F0F9FF" stroke="#0284C7" stroke-width="3"/>
+  <rect x="180" y="180" width="40" height="40" rx="5" fill="#0EA5E9"/>
+  <rect x="190" y="190" width="20" height="20" rx="2" fill="white"/>
+  
+  <circle cx="600" cy="200" r="60" fill="#F0F9FF" stroke="#0284C7" stroke-width="3"/>
+  <rect x="580" y="180" width="40" height="40" rx="5" fill="#0EA5E9"/>
+  <rect x="590" y="190" width="20" height="20" rx="2" fill="white"/>
+  
+  <!-- Connection Lines -->
+  <path d="M260 200L280 200" stroke="#0284C7" stroke-width="3" stroke-dasharray="5 5"/>
+  <path d="M520 200L540 200" stroke="#0284C7" stroke-width="3" stroke-dasharray="5 5"/>
+  
+  <!-- Data Flow Animation -->
+  <circle cx="270" cy="200" r="5" fill="#0284C7">
+    <animate attributeName="cx" from="260" to="280" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  
+  <circle cx="530" cy="200" r="5" fill="#0284C7">
+    <animate attributeName="cx" from="520" to="540" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Text Labels -->
+  <text x="200" y="280" font-family="Arial" font-size="14" fill="#0F172A" text-anchor="middle">RSS</text>
+  <text x="600" y="280" font-family="Arial" font-size="14" fill="#0F172A" text-anchor="middle">Публикация</text>
+</svg> 

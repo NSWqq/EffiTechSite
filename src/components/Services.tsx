@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { FiMessageSquare, FiServer, FiGlobe, FiCpu, FiActivity, FiArrowRight } from 'react-icons/fi';
+import { FiMessageSquare, FiServer, FiGlobe, FiCpu, FiActivity, FiArrowRight, FiCheck } from 'react-icons/fi';
 
 const servicesData = {
   ru: [
@@ -105,13 +105,15 @@ const content = {
     title: 'Наши услуги',
     description: 'Мы предлагаем комплексные решения для автоматизации бизнес-процессов, которые помогут вашей компании работать эффективнее',
     getConsultation: 'Получить консультацию',
-    contactUs: 'Связаться с нами'
+    contactUs: 'Связаться с нами',
+    learnMore: 'Узнать больше'
   },
   en: {
     title: 'Our Services',
     description: 'We offer comprehensive solutions for business process automation that will help your company work more efficiently',
     getConsultation: 'Get a Consultation',
-    contactUs: 'Contact Us'
+    contactUs: 'Contact Us',
+    learnMore: 'Learn More'
   }
 };
 
@@ -174,12 +176,11 @@ export default function Services() {
   const currentContent = content[language as keyof typeof content];
 
   return (
-    <section id="services" className="py-20 bg-secondary-50">
+    <section id="services" className="py-20 bg-white">
       <div className="container">
         <div className="text-center mb-16">
           <motion.h2 
             className={`${titleSize} font-bold text-black mb-4`}
-            style={{color: '#000000 !important'}}
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
@@ -187,8 +188,7 @@ export default function Services() {
             {currentContent.title}
           </motion.h2>
           <motion.p 
-            className={`${textSize} text-black max-w-2xl mx-auto`}
-            style={{color: '#000000 !important'}}
+            className="text-lg text-black max-w-2xl mx-auto"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.2 }}
@@ -197,46 +197,41 @@ export default function Services() {
           </motion.p>
         </div>
 
-        <motion.div 
-          ref={ref}
-          variants={containerVariants}
-          initial="hidden"
-          animate={inView ? "visible" : "hidden"}
-          className={`grid ${gridCols} gap-8`}
-        >
+        <div className={`grid ${gridCols} gap-8`}>
           {services.map((service, index) => (
-            <motion.div 
-              key={index} 
-              variants={itemVariants}
-              className="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow"
+            <motion.div
+              key={index}
+              className="bg-white rounded-xl shadow-md hover:shadow-xl transition-shadow p-6 border border-secondary-100"
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+              whileHover={{ y: -5 }}
             >
-              <div className={`flex ${flexDirection} ${!isMobile ? 'items-start' : ''}`}>
-                <div className={`${isMobile ? 'mb-4' : 'mr-6'}`}>{service.icon}</div>
-                <div>
-                  <h3 className="text-2xl font-semibold text-black mb-3" style={{color: '#000000 !important'}}>{service.title}</h3>
-                  <p className="text-black mb-4" style={{color: '#000000 !important'}}>{service.description}</p>
-                  <ul className="space-y-2">
-                    {service.features.map((feature, idx) => (
-                      <li key={idx} className="flex items-start">
-                        <span className="text-primary-600 mr-2" style={{color: '#0284c7 !important'}}>•</span>
-                        <span className="text-black" style={{color: '#000000 !important'}}>{feature}</span>
-                      </li>
-                    ))}
-                  </ul>
+              <div className="w-14 h-14 bg-primary-50 rounded-lg flex items-center justify-center mb-6">
+                <div className="text-primary-600 text-2xl">
+                  {service.icon}
                 </div>
+              </div>
+              <h3 className="text-xl font-bold text-black mb-3">{service.title}</h3>
+              <p className="text-black mb-6">{service.description}</p>
+              <ul className="space-y-2 mb-6">
+                {service.features.map((feature, idx) => (
+                  <li key={idx} className="flex items-start">
+                    <FiCheck className="text-primary-600 mr-2 mt-1 flex-shrink-0" />
+                    <span className="text-black">{feature}</span>
+                  </li>
+                ))}
+              </ul>
+              <div className="mt-auto">
+                <a
+                  href="mailto:effitechh@gmail.com?subject=Запрос услуги"
+                  className="text-black font-medium hover:text-primary-700 transition-colors inline-flex items-center"
+                >
+                  {currentContent.learnMore} <FiArrowRight className="ml-1" />
+                </a>
               </div>
             </motion.div>
           ))}
-        </motion.div>
-        
-        <div className="text-center mt-12">
-          <a
-            href="mailto:effitechh@gmail.com"
-            className="inline-flex items-center bg-primary-600 text-white px-6 py-3 rounded-md hover:bg-primary-700 transition-colors"
-            style={{color: '#ffffff !important', backgroundColor: '#0284c7 !important'}}
-          >
-            {currentContent.contactUs} <FiArrowRight className="ml-2" />
-          </a>
         </div>
       </div>
     </section>

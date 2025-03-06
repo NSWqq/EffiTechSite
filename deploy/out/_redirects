@@ -1,0 +1,4 @@
+/* /index.html 200
+/index /index.html 200
+/_next/* /_next/:splat 200
+/images/* /images/:splat 200 
