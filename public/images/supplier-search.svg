@@ -1,0 +1,64 @@
+<svg width="800" height="400" viewBox="0 0 800 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="400" fill="#F0F9FF"/>
+  
+  <!-- Background Elements -->
+  <circle cx="400" cy="200" r="180" fill="#E0F2FE" opacity="0.7"/>
+  <circle cx="150" cy="100" r="50" fill="#BAE6FD" opacity="0.5"/>
+  <circle cx="650" cy="300" r="70" fill="#7DD3FC" opacity="0.4"/>
+  
+  <!-- Search System -->
+  <circle cx="400" cy="200" r="80" fill="#0EA5E9"/>
+  <circle cx="400" cy="200" r="60" fill="#0284C7"/>
+  <circle cx="400" cy="200" r="40" fill="#075985"/>
+  <path d="M450 150L470 130" stroke="white" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="440" cy="160" r="15" fill="none" stroke="white" stroke-width="6">
+    <animate attributeName="r" values="15;17;15" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Suppliers -->
+  <circle cx="200" cy="120" r="30" fill="white" stroke="#0284C7" stroke-width="2"/>
+  <rect x="185" y="110" width="30" height="20" rx="2" fill="#0EA5E9"/>
+  
+  <circle cx="150" cy="200" r="30" fill="white" stroke="#0284C7" stroke-width="2"/>
+  <rect x="135" y="190" width="30" height="20" rx="2" fill="#0EA5E9"/>
+  
+  <circle cx="200" cy="280" r="30" fill="white" stroke="#0284C7" stroke-width="2"/>
+  <rect x="185" y="270" width="30" height="20" rx="2" fill="#0EA5E9"/>
+  
+  <!-- Results -->
+  <rect x="550" y="120" width="150" height="160" rx="10" fill="white" stroke="#0284C7" stroke-width="2"/>
+  <rect x="560" y="130" width="130" height="30" rx="5" fill="#BAE6FD"/>
+  <rect x="560" y="170" width="130" height="30" rx="5" fill="#BAE6FD"/>
+  <rect x="560" y="210" width="130" height="30" rx="5" fill="#BAE6FD"/>
+  <rect x="560" y="250" width="60" height="20" rx="5" fill="#F97316"/>
+  
+  <!-- Connection Lines -->
+  <path d="M230 120L320 160" stroke="#0284C7" stroke-width="2" stroke-dasharray="5 5"/>
+  <path d="M180 200L320 200" stroke="#0284C7" stroke-width="2" stroke-dasharray="5 5"/>
+  <path d="M230 280L320 240" stroke="#0284C7" stroke-width="2" stroke-dasharray="5 5"/>
+  <path d="M480 200L550 200" stroke="#0284C7" stroke-width="2" stroke-dasharray="5 5"/>
+  
+  <!-- Data Flow Animation -->
+  <circle cx="275" cy="140" r="5" fill="#0284C7">
+    <animate attributeName="cx" from="230" to="320" dur="2s" repeatCount="indefinite"/>
+    <animate attributeName="cy" from="120" to="160" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  
+  <circle cx="250" cy="200" r="5" fill="#0284C7">
+    <animate attributeName="cx" from="180" to="320" dur="1.5s" repeatCount="indefinite"/>
+  </circle>
+  
+  <circle cx="275" cy="260" r="5" fill="#0284C7">
+    <animate attributeName="cx" from="230" to="320" dur="2s" repeatCount="indefinite"/>
+    <animate attributeName="cy" from="280" to="240" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  
+  <circle cx="515" cy="200" r="5" fill="#0284C7">
+    <animate attributeName="cx" from="480" to="550" dur="1.5s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Text Labels -->
+  <text x="200" y="330" font-family="Arial" font-size="14" fill="#0F172A" text-anchor="middle">Поставщики</text>
+  <text x="400" y="300" font-family="Arial" font-size="14" fill="#0F172A" text-anchor="middle">Система поиска</text>
+  <text x="625" y="300" font-family="Arial" font-size="14" fill="#0F172A" text-anchor="middle">Предложения</text>
+</svg> 

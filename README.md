@@ -1,36 +1,52 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# EffiTech - Сайт компании по автоматизации бизнес-процессов
 
-## Getting Started
+Современный адаптивный сайт для компании, специализирующейся на автоматизации бизнес-процессов. Сайт разработан с использованием Next.js, React и Tailwind CSS.
 
-First, run the development server:
+## Особенности
+
+- Адаптивный дизайн для всех устройств
+- Двуязычный интерфейс (русский и английский)
+- Анимированные SVG-иллюстрации
+- Оптимизированная производительность
+- Форма обратной связи
+- Раздел FAQ с аккордеонами
+
+## Технологии
+
+- Next.js 15
+- React 19
+- Tailwind CSS 4
+- Framer Motion
+- React Icons
+- React Scroll
+- React Intersection Observer
+
+## Локальная разработка
 
 ```bash
+# Установка зависимостей
+npm install
+
+# Запуск сервера разработки
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# Сборка для продакшена
+npm run build
+
+# Запуск продакшен-версии
+npm run start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Деплой на Netlify
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Проект настроен для деплоя на Netlify. Для деплоя:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. Создайте репозиторий на GitHub и загрузите туда код
+2. Зарегистрируйтесь на [Netlify](https://www.netlify.com/)
+3. Нажмите "New site from Git" и выберите ваш репозиторий
+4. Настройки сборки уже заданы в файле `netlify.toml`
+5. Нажмите "Deploy site"
 
-## Learn More
+## Контакты
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+По вопросам о проекте обращайтесь: effitechh@gmail.com
