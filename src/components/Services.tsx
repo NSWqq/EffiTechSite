@@ -178,7 +178,7 @@ export default function Services() {
       <div className="container">
         <div className="text-center mb-16">
           <motion.h2 
-            className={`${titleSize} font-bold text-secondary-900 mb-4`}
+            className={`${titleSize} font-bold text-black mb-4`}
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
@@ -186,7 +186,7 @@ export default function Services() {
             {currentContent.title}
           </motion.h2>
           <motion.p 
-            className={`${textSize} text-secondary-700 max-w-2xl mx-auto`}
+            className={`${textSize} text-black max-w-2xl mx-auto`}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.2 }}

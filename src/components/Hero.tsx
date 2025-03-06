@@ -83,10 +83,10 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <h1 className={`${textClasses} font-bold text-secondary-900 leading-tight mb-4`}>
+            <h1 className={`${textClasses} font-bold text-secondary-900 leading-tight mb-4 text-black`}>
               {content[language as keyof typeof content].title}
             </h1>
-            <p className={`${isMobile ? 'text-lg' : 'text-xl'} text-secondary-700 mb-8 max-w-xl`}>
+            <p className={`${isMobile ? 'text-lg' : 'text-xl'} text-secondary-700 mb-8 max-w-xl text-black`}>
               {content[language as keyof typeof content].description}
             </p>
             <div className={`flex ${buttonLayout} gap-4`}>

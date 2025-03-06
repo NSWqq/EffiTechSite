@@ -21,6 +21,34 @@ body {
   background: rgb(var(--background-rgb));
 }
 
+/* Принудительно устанавливаем цвета текста */
+h1, h2, h3, h4, h5, h6, p, span, li, a {
+  color: #000000 !important;
+}
+
+.bg-primary-600 h1, 
+.bg-primary-600 h2, 
+.bg-primary-600 h3, 
+.bg-primary-600 h4, 
+.bg-primary-600 h5, 
+.bg-primary-600 h6, 
+.bg-primary-600 p, 
+.bg-primary-600 span, 
+.bg-primary-600 li, 
+.bg-primary-600 a,
+.bg-secondary-900 h1, 
+.bg-secondary-900 h2, 
+.bg-secondary-900 h3, 
+.bg-secondary-900 h4, 
+.bg-secondary-900 h5, 
+.bg-secondary-900 h6, 
+.bg-secondary-900 p, 
+.bg-secondary-900 span, 
+.bg-secondary-900 li, 
+.bg-secondary-900 a {
+  color: #ffffff !important;
+}
+
 @layer utilities {
   .container {
     max-width: 80rem;
