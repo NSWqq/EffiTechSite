@@ -122,6 +122,14 @@ export default function Navbar() {
               >
                 <FiGlobe className="mr-1" /> {language === 'ru' ? 'EN' : 'RU'}
               </button>
+              <a
+                href="mailto:effitechh@gmail.com"
+                className={`hidden md:inline-flex items-center text-black hover:text-primary-600 transition-colors`}
+                style={{color: '#000000 !important'}}
+              >
+                <FiMail className="mr-2" />
+                {language === 'ru' ? 'Связаться' : 'Contact us'}
+              </a>
               <button
                 onClick={() => setIsOpen(!isOpen)}
                 className={`${scrolled ? 'text-black' : 'text-secondary-700'} hover:text-primary-600 transition-colors`}

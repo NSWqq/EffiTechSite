@@ -100,13 +100,16 @@ export default function Hero() {
               >
                 {content[language as keyof typeof content].learnMore} <FiArrowRight className="ml-2" />
               </ScrollLink>
-              <a
-                href="mailto:effitechh@gmail.com"
-                className="border-2 border-primary-600 text-primary-600 px-6 py-3 rounded-md hover:bg-primary-50 transition-colors inline-flex items-center justify-center"
+              <ScrollLink
+                to="contacts"
+                smooth={true}
+                duration={500}
+                offset={-70}
+                className="border-2 border-primary-600 text-primary-600 px-6 py-3 rounded-md hover:bg-primary-50 transition-colors inline-flex items-center justify-center cursor-pointer"
                 style={{color: '#0284c7 !important', borderColor: '#0284c7 !important'}}
               >
                 {content[language as keyof typeof content].contactUs}
-              </a>
+              </ScrollLink>
             </div>
           </motion.div>
           <motion.div 

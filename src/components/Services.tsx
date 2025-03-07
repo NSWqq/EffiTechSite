@@ -14,6 +14,7 @@ import {
   FiSettings, 
   FiLifeBuoy 
 } from 'react-icons/fi';
+import { Link as ScrollLink } from 'react-scroll';
 
 const servicesData = {
   ru: [
@@ -180,7 +181,8 @@ const content = {
     getConsultation: 'Получить консультацию',
     contactUs: 'Связаться с нами',
     whyChooseUs: 'Почему выбирают нас',
-    whyChooseUsDescription: 'Наш подход к автоматизации бизнес-процессов основан на глубоком понимании потребностей клиентов и использовании современных технологий'
+    whyChooseUsDescription: 'Наш подход к автоматизации бизнес-процессов основан на глубоком понимании потребностей клиентов и использовании современных технологий',
+    included: 'Что включено:'
   },
   en: {
     title: 'Our Services',
@@ -188,7 +190,8 @@ const content = {
     getConsultation: 'Get a Consultation',
     contactUs: 'Contact Us',
     whyChooseUs: 'Why Choose Us',
-    whyChooseUsDescription: 'Our approach to business process automation is based on a deep understanding of client needs and the use of modern technologies'
+    whyChooseUsDescription: 'Our approach to business process automation is based on a deep understanding of client needs and the use of modern technologies',
+    included: 'What\'s included:'
   }
 };
 
@@ -326,7 +329,7 @@ export default function Services() {
                 </div>
                 
                 <div className="bg-white bg-opacity-70 rounded-xl p-4 mb-6">
-                  <h4 className="font-semibold text-black mb-3" style={{color: '#000000 !important'}}>Что включено:</h4>
+                  <h4 className="font-semibold text-black mb-3" style={{color: '#000000 !important'}}>{currentContent.included}</h4>
                   <ul className="space-y-2">
                     {service.features.map((feature, idx) => (
                       <li key={idx} className="flex items-start">
@@ -338,12 +341,13 @@ export default function Services() {
                 </div>
                 
                 <div className="text-center">
-                  <button
+                  <a
+                    href="mailto:effitechh@gmail.com?subject=Запрос информации о услуге"
                     className={`inline-flex items-center justify-center px-6 py-3 rounded-lg bg-white text-primary-600 font-medium shadow-sm hover:shadow-md transition-all duration-300 transform ${hoveredCard === index ? 'scale-105' : ''}`}
                     style={{color: '#0284c7 !important', backgroundColor: '#ffffff !important'}}
                   >
                     {service.buttonText} <FiArrowRight className="ml-2" />
-                  </button>
+                  </a>
                 </div>
               </div>
             </motion.div>
@@ -399,16 +403,19 @@ export default function Services() {
         </div>
         
         <div className="text-center mt-12">
-          <a
-            href="mailto:effitechh@gmail.com"
-            className="inline-flex items-center justify-center bg-primary-600 text-white px-8 py-4 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-105"
+          <ScrollLink
+            to="contacts"
+            smooth={true}
+            duration={500}
+            offset={-70}
+            className="inline-flex items-center justify-center bg-primary-600 text-white px-8 py-4 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-105 cursor-pointer"
             style={{
               background: 'linear-gradient(to right, #0284c7, #0369a1)',
               color: '#ffffff !important'
             }}
           >
             {currentContent.contactUs} <FiArrowRight className="ml-2" />
-          </a>
+          </ScrollLink>
         </div>
       </div>
     </section>

@@ -62,7 +62,7 @@ const examplesData = {
         'Increases audience reach by 35%',
         'Provides stable content plan without interruptions'
       ],
-      image: '/images/telegram-automation.svg'
+      image: '/images/telegram-automation-en.svg'
     },
     {
       icon: <FiMessageSquare className="w-10 h-10 text-black" />,
@@ -73,7 +73,7 @@ const examplesData = {
         'Reduces request processing time by 70%',
         'Provides automatic reporting on ad effectiveness'
       ],
-      image: '/images/telegram-ads.svg'
+      image: '/images/telegram-ads-en.svg'
     },
     {
       icon: <FiMail className="w-10 h-10 text-black" />,
@@ -84,7 +84,7 @@ const examplesData = {
         'Provides automatic categorization and prioritization',
         'Integrates with CRM and task management systems'
       ],
-      image: '/images/email-processing.svg'
+      image: '/images/email-processing-en.svg'
     },
     {
       icon: <FiSearch className="w-10 h-10 text-black" />,
@@ -95,7 +95,7 @@ const examplesData = {
         'Reduces purchase prices by 15-20%',
         'Automates negotiations on standard terms'
       ],
-      image: '/images/supplier-search.svg'
+      image: '/images/supplier-search-en.svg'
     }
   ]
 };
@@ -139,7 +139,8 @@ export default function Examples() {
     
     // Слушаем событие изменения языка
     const handleLanguageChange = (e: CustomEvent) => {
-      setLanguage(e.detail.language);
+      const newLanguage = e.detail.language;
+      setLanguage(newLanguage);
     };
 
     window.addEventListener('languageChange' as any, handleLanguageChange);
