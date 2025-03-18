@@ -74,7 +74,7 @@ export default function Navbar() {
         <div className="container flex justify-between items-center">
           <div className={`text-2xl font-bold ${scrolled ? 'text-black' : 'text-primary-700'}`}>
             <ScrollLink to="hero" smooth={true} duration={500} className="cursor-pointer">
-              EffiTech
+              EffiCore
             </ScrollLink>
           </div>
 
@@ -104,7 +104,7 @@ export default function Navbar() {
                 <FiGlobe className="mr-1" /> {language === 'ru' ? 'EN' : 'RU'}
               </button>
               <a
-                href="mailto:effitechh@gmail.com"
+                href="mailto:sales@efficore.pro"
                 className={`hidden md:inline-flex items-center text-black hover:text-primary-600 transition-colors`}
                 style={{color: '#000000 !important'}}
               >
@@ -125,7 +125,7 @@ export default function Navbar() {
                 <FiGlobe className="mr-1" /> {language === 'ru' ? 'EN' : 'RU'}
               </button>
               <a
-                href="mailto:effitechh@gmail.com"
+                href="mailto:sales@efficore.pro"
                 className={`hidden md:inline-flex items-center text-black hover:text-primary-600 transition-colors`}
                 style={{color: '#000000 !important'}}
               >
@@ -165,7 +165,7 @@ export default function Navbar() {
                 </ScrollLink>
               ))}
               <a
-                href="mailto:effitechh@gmail.com"
+                href="mailto:sales@efficore.pro"
                 className={`flex items-center text-black hover:text-primary-600 transition-colors py-2`}
                 style={{color: '#000000 !important'}}
                 onClick={() => setIsOpen(false)}

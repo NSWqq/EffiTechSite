@@ -299,7 +299,7 @@ export default function Examples() {
                 </div>
                 <div className="text-right">
                   <a
-                    href="mailto:effitechh@gmail.com?subject=Запрос информации о проекте"
+                    href="mailto:sales@efficore.pro?subject=Запрос информации о проекте"
                     className="text-black font-medium hover:text-primary-700 transition-colors inline-flex items-center"
                     style={{color: '#000000 !important'}}
                   >

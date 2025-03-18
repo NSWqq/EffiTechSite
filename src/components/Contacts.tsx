@@ -92,7 +92,7 @@ export default function Contacts() {
       const body = language === 'ru'
         ? `Имя: ${formData.name}\nEmail: ${formData.email}\nТелефон: ${formData.phone}\n\nСообщение:\n${formData.message}`
         : `Name: ${formData.name}\nEmail: ${formData.email}\nPhone: ${formData.phone}\n\nMessage:\n${formData.message}`;
-      window.location.href = `mailto:effitechh@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      window.location.href = `mailto:sales@efficore.pro?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
       
       // Сбрасываем форму
       setFormData({
@@ -154,8 +154,8 @@ export default function Contacts() {
                     <FiMail className="text-primary-600 mr-2 text-xl" style={{color: '#0284c7 !important'}} />
                     <div>
                       <h3 className="font-medium text-black" style={{color: '#000000 !important'}}>Email:</h3>
-                      <a href="mailto:effitechh@gmail.com" className="hover:underline text-black hover:text-primary-600 transition-colors" style={{color: '#000000 !important'}}>
-                        effitechh@gmail.com
+                      <a href="mailto:sales@efficore.pro" className="hover:underline text-black hover:text-primary-600 transition-colors" style={{color: '#000000 !important'}}>
+                        sales@efficore.pro
                       </a>
                     </div>
                   </div>

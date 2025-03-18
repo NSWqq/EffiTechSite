@@ -74,7 +74,7 @@ export default function CTA() {
           >
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="mailto:effitechh@gmail.com?subject=Запрос консультации"
+                href="mailto:sales@efficore.pro?subject=Запрос консультации"
                 className="bg-white text-black px-8 py-3 rounded-md hover:bg-gray-100 transition-colors inline-flex items-center justify-center"
                 style={{color: '#000000 !important', backgroundColor: '#ffffff !important'}}
               >

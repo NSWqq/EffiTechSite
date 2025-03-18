@@ -342,7 +342,7 @@ export default function Services() {
                 
                 <div className="text-center">
                   <a
-                    href="mailto:effitechh@gmail.com?subject=Запрос информации о услуге"
+                    href="mailto:sales@efficore.pro?subject=Запрос информации о услуге"
                     className={`inline-flex items-center justify-center px-6 py-3 rounded-lg bg-white text-primary-600 font-medium shadow-sm hover:shadow-md transition-all duration-300 transform ${hoveredCard === index ? 'scale-105' : ''}`}
                     style={{color: '#0284c7 !important', backgroundColor: '#ffffff !important'}}
                   >
