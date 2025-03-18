@@ -7,7 +7,9 @@ import { FiMenu, FiX, FiArrowUp, FiGlobe, FiMail } from 'react-icons/fi';
 
 const navItems = [
   { name: 'О компании', nameEn: 'About', target: 'about' },
-  { name: 'Услуги', nameEn: 'Services', target: 'services' },
+  { name: 'Системы Автоматизации', nameEn: 'Automation Systems', target: 'services' },
+  { name: 'Разработка сайтов', nameEn: 'Web Development', target: 'webdevelopment' },
+  { name: 'CRM-система', nameEn: 'CRM System', target: 'crmsystem' },
   { name: 'Примеры внедрений', nameEn: 'Examples', target: 'examples' },
   { name: 'Контакты', nameEn: 'Contacts', target: 'contacts' },
 ];

@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { FiArrowRight, FiMessageSquare, FiMail, FiSearch, FiUsers } from 'react-icons/fi';
+import { FiArrowRight, FiMessageSquare, FiMail, FiSearch, FiUsers, FiDatabase, FiGrid } from 'react-icons/fi';
 
 const examplesData = {
   ru: [
@@ -17,6 +17,30 @@ const examplesData = {
         'Стабильный контент-план без перебоев'
       ],
       image: '/images/telegram-automation.svg'
+    },
+    {
+      icon: <FiDatabase className="w-10 h-10 text-black" />,
+      title: 'Внедрение CRM системы для автотехцентра',
+      description: 'Разработали и внедрили персонализированную CRM-систему для сети автосервисов с функциями учета клиентов, автомобилей и истории обслуживания.',
+      results: [
+        'Сокращение времени на оформление и обслуживание клиентов на 60%',
+        'Интеграция с диагностическим оборудованием и базами данных запчастей',
+        'Автоматические напоминания клиентам снизили количество пропущенных ТО на 70%',
+        'Полная цифровизация истории обслуживания автомобилей'
+      ],
+      image: '/images/crm-system.svg'
+    },
+    {
+      icon: <FiGrid className="w-10 h-10 text-black" />,
+      title: 'Автоматизация B2B-процессов',
+      description: 'Создали комплексную систему, которая собирает и анализирует данные заказов со всех сетей и сайтов партнеров, интегрирует их в CRM и автоматически ведет клиентов.',
+      results: [
+        'Агрегация данных из 15+ различных источников в единую систему',
+        'Автоматизация 90% рутинных операций по обработке заказов',
+        'Интеллектуальная система рассылок увеличила повторные продажи на 45%',
+        'Автоматические напоминания о датах записи и купленных услугах'
+      ],
+      image: '/images/b2b-automation.svg'
     },
     {
       icon: <FiMessageSquare className="w-10 h-10 text-black" />,
@@ -63,6 +87,30 @@ const examplesData = {
         'Provides stable content plan without interruptions'
       ],
       image: '/images/telegram-automation-en.svg'
+    },
+    {
+      icon: <FiDatabase className="w-10 h-10 text-black" />,
+      title: 'CRM System Implementation for Auto Service Center',
+      description: 'Developed and implemented a personalized CRM system for a chain of auto service centers with customer management, vehicle tracking, and service history features.',
+      results: [
+        'Reduced customer registration and service time by 60%',
+        'Integration with diagnostic equipment and spare parts databases',
+        'Automatic reminders reduced missed maintenance appointments by 70%',
+        'Complete digitization of vehicle service history'
+      ],
+      image: '/images/crm-system-en.svg'
+    },
+    {
+      icon: <FiGrid className="w-10 h-10 text-black" />,
+      title: 'B2B Process Automation',
+      description: 'Created a comprehensive system that collects and analyzes order data from all partner networks and websites, integrates them into CRM, and automatically manages customers.',
+      results: [
+        'Aggregation of data from 15+ different sources into a single system',
+        'Automation of 90% of routine order processing operations',
+        'Intelligent mailing system increased repeat sales by 45%',
+        'Automatic reminders about registration dates and purchased services'
+      ],
+      image: '/images/b2b-automation-en.svg'
     },
     {
       icon: <FiMessageSquare className="w-10 h-10 text-black" />,

@@ -56,16 +56,16 @@ export default function Hero() {
 
   const content = {
     ru: {
-      title: <><span className="text-primary-600" style={{color: '#0284c7 !important'}}>EffiTech</span> - автоматизация, умножающая эффективность</>,
-      description: 'Мы создаем индивидуальные системы автоматизации, которые экономят ваше время и увеличивают прибыль',
+      title: <><span className="text-primary-600" style={{color: '#0284c7 !important'}}>EffiTech</span> - комплексные решения для вашего бизнеса</>,
+      description: 'Мы создаем индивидуальные системы автоматизации, современные веб-сайты и CRM-системы, которые экономят ваше время и увеличивают прибыль',
       learnMore: 'Узнать больше',
       contactUs: 'Связаться с нами',
       altText: 'Автоматизация бизнес-процессов',
       placeholderText: 'Автоматизация+бизнес-процессов'
     },
     en: {
-      title: <><span className="text-primary-600" style={{color: '#0284c7 !important'}}>EffiTech</span> - automation that multiplies efficiency</>,
-      description: 'We create custom automation systems that save your time and increase profits',
+      title: <><span className="text-primary-600" style={{color: '#0284c7 !important'}}>EffiTech</span> - comprehensive solutions for your business</>,
+      description: 'We create custom automation systems, modern websites and CRM systems that save your time and increase profits',
       learnMore: 'Learn more',
       contactUs: 'Contact us',
       altText: 'Business process automation',

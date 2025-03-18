@@ -19,6 +19,14 @@ const faqsData = {
       answer: 'Практически любые повторяющиеся процессы могут быть автоматизированы: обработка данных, коммуникация с клиентами, управление задачами, документооборот, маркетинг, продажи, HR-процессы и многое другое. Мы проводим анализ вашего бизнеса и предлагаем оптимальные решения.'
     },
     {
+      question: 'Какие услуги по разработке сайтов вы предлагаете?',
+      answer: 'Мы предлагаем широкий спектр услуг по разработке веб-сайтов: корпоративные сайты, интернет-магазины, лендинги, порталы и веб-приложения. Все наши сайты адаптивны, оптимизированы для SEO и разрабатываются с учетом современных требований к безопасности и производительности.'
+    },
+    {
+      question: 'Как происходит разработка индивидуальных CRM-систем?',
+      answer: 'Процесс разработки CRM включает несколько этапов: анализ бизнес-процессов, проектирование архитектуры, разработка интерфейса, программирование функциональности, тестирование и внедрение. Мы создаем системы с учетом специфики вашего бизнеса, чтобы максимально автоматизировать рабочие процессы и повысить эффективность.'
+    },
+    {
       question: 'Нужно ли обучение сотрудников для работы с новой системой?',
       answer: 'Да, мы предоставляем полное обучение ваших сотрудников работе с внедренными системами. Наша цель — сделать переход максимально комфортным. Мы также предоставляем документацию и видеоинструкции для самостоятельного изучения.'
     },
@@ -29,6 +37,10 @@ const faqsData = {
     {
       question: 'Можно ли интегрировать новую систему с уже используемыми в компании программами?',
       answer: 'Да, мы специализируемся на интеграции различных систем. Наши решения могут быть интегрированы с большинством популярных CRM, ERP, бухгалтерских программ и других систем, которые вы уже используете.'
+    },
+    {
+      question: 'Какие технологии вы используете для разработки?',
+      answer: 'Мы используем современный стек технологий: React, Next.js, Node.js, Python, Django, Laravel, PostgreSQL, MongoDB и другие. Выбор технологий зависит от задач проекта и требований к производительности, масштабируемости и безопасности.'
     }
   ],
   en: [
@@ -45,6 +57,14 @@ const faqsData = {
       answer: 'Almost any repetitive processes can be automated: data processing, customer communication, task management, document flow, marketing, sales, HR processes, and much more. We analyze your business and offer optimal solutions.'
     },
     {
+      question: 'What website development services do you offer?',
+      answer: 'We offer a wide range of website development services: corporate websites, e-commerce stores, landing pages, portals, and web applications. All our websites are responsive, SEO-optimized, and developed with modern security and performance requirements in mind.'
+    },
+    {
+      question: 'How does custom CRM system development work?',
+      answer: 'The CRM development process includes several stages: business process analysis, architecture design, interface development, functionality programming, testing, and implementation. We create systems tailored to your business specifics to maximize the automation of work processes and increase efficiency.'
+    },
+    {
       question: 'Do employees need training to work with the new system?',
       answer: 'Yes, we provide complete training for your employees to work with the implemented systems. Our goal is to make the transition as comfortable as possible. We also provide documentation and video instructions for self-study.'
     },
@@ -55,6 +75,10 @@ const faqsData = {
     {
       question: 'Can the new system be integrated with programs already used in the company?',
       answer: 'Yes, we specialize in integrating various systems. Our solutions can be integrated with most popular CRM, ERP, accounting programs, and other systems that you already use.'
+    },
+    {
+      question: 'What technologies do you use for development?',
+      answer: 'We use a modern technology stack: React, Next.js, Node.js, Python, Django, Laravel, PostgreSQL, MongoDB, and others. The choice of technologies depends on project requirements and needs for performance, scalability, and security.'
     }
   ]
 };

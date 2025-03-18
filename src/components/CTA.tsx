@@ -78,7 +78,7 @@ export default function CTA() {
                 className="bg-white text-black px-8 py-3 rounded-md hover:bg-gray-100 transition-colors inline-flex items-center justify-center"
                 style={{color: '#000000 !important', backgroundColor: '#ffffff !important'}}
               >
-                {currentContent.button}
+                {currentContent.button} <FiArrowRight className="ml-2" />
               </a>
             </div>
           </motion.div>

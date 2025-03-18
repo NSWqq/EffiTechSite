@@ -75,11 +75,11 @@ const advantagesData = {
 const content = {
   ru: {
     title: 'О компании',
-    description: 'Наша компания специализируется на разработке и внедрении систем автоматизации для бизнеса, помогая компаниям оптимизировать процессы и повысить эффективность.'
+    description: 'Наша компания специализируется на разработке и внедрении систем автоматизации для бизнеса, создании современных веб-сайтов и индивидуальных CRM-систем, помогая компаниям оптимизировать процессы и повысить эффективность.'
   },
   en: {
     title: 'About Us',
-    description: 'Our company specializes in the development and implementation of automation systems for businesses, helping companies optimize processes and increase efficiency.'
+    description: 'Our company specializes in the development and implementation of automation systems for businesses, creating modern websites and custom CRM systems, helping companies optimize processes and increase efficiency.'
   }
 };
 
@@ -196,25 +196,18 @@ export default function About() {
             <motion.div 
               key={index} 
               variants={itemVariants}
-              className={`bg-secondary-50 p-6 rounded-lg transition-all duration-300 ${
-                isMobile 
-                  ? activeCard === index 
-                    ? 'shadow-lg scale-[1.03] bg-secondary-100' 
-                    : 'shadow-sm active:shadow-md' 
-                  : 'hover:shadow-md'
+              className={`bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 ${
+                activeCard === index ? 'ring-2 ring-primary-500' : ''
               }`}
-              style={{backgroundColor: '#f8fafc !important'}}
+              style={{backgroundColor: '#ffffff !important'}}
               onClick={() => handleCardTap(index)}
-              whileTap={isMobile ? { scale: 1.03 } : {}}
             >
-              <div className="flex items-start">
-                <div className={`mr-4 mt-1 transition-transform duration-300 ${activeCard === index && isMobile ? 'scale-125' : ''}`}>
+              <div className="flex flex-col md:flex-row items-center md:items-start">
+                <div className="mb-4 md:mb-0 md:mr-4 p-3 bg-primary-50 rounded-full inline-flex items-center justify-center" style={{backgroundColor: '#f0f9ff !important'}}>
                   {advantage.icon}
                 </div>
-                <div>
-                  <h3 className={`text-xl font-semibold text-black mb-2 transition-colors duration-300 ${activeCard === index && isMobile ? 'text-primary-600' : ''}`} style={{color: '#000000 !important'}}>
-                    {advantage.title}
-                  </h3>
+                <div className="text-center md:text-left">
+                  <h3 className="text-xl font-semibold text-black mb-2" style={{color: '#000000 !important'}}>{advantage.title}</h3>
                   <p className="text-black" style={{color: '#000000 !important'}}>{advantage.description}</p>
                 </div>
               </div>
@@ -224,4 +217,4 @@ export default function About() {
       </div>
     </section>
   );
-} 
+}

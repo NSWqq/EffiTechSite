@@ -6,10 +6,10 @@ import { FiMail } from 'react-icons/fi';
 
 const content = {
   ru: {
-    companyDescription: 'Мы специализируемся на разработке и внедрении систем автоматизации для бизнеса, создавая решения, умножающие эффективность вашей компании.',
+    companyDescription: 'Мы специализируемся на разработке и внедрении систем автоматизации для бизнеса, создании сайтов и CRM-систем, создавая решения, умножающие эффективность вашей компании.',
     navigation: 'Навигация',
     about: 'О компании',
-    services: 'Услуги',
+    services: 'Системы Автоматизации',
     examples: 'Примеры внедрений',
     contacts: 'Контакты',
     servicesList: {
@@ -18,6 +18,8 @@ const content = {
         'Индивидуальные системы автоматизации',
         'Автоматизация Telegram',
         'Интеграция искусственного интеллекта',
+        'Разработка сайтов любой сложности',
+        'Индивидуальные CRM-системы',
         'Полный цикл разработки'
       ]
     },
@@ -25,10 +27,10 @@ const content = {
     contactUs: 'Свяжитесь с нами'
   },
   en: {
-    companyDescription: 'We specialize in the development and implementation of automation systems for businesses, creating solutions that multiply the efficiency of your company.',
+    companyDescription: 'We specialize in the development and implementation of automation systems for businesses, website development and CRM systems, creating solutions that multiply the efficiency of your company.',
     navigation: 'Navigation',
     about: 'About Us',
-    services: 'Services',
+    services: 'Automation Systems',
     examples: 'Examples',
     contacts: 'Contacts',
     servicesList: {
@@ -37,6 +39,8 @@ const content = {
         'Custom Automation Systems',
         'Telegram Automation',
         'AI Integration',
+        'Website Development of Any Complexity',
+        'Custom CRM Systems',
         'Full Development Cycle'
       ]
     },
